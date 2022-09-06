@@ -1,0 +1,43 @@
+html {
+    font-size: 62%;
+    height: 100%;
+}
+
+body {
+    height: 100%;
+}
+
+.item1 {
+    grid-area: item1;
+    /* height: 15rem; */
+  }
+
+  .item2 {
+    grid-area: item2;
+    /* height: auto; */
+  }
+  
+  .item3 {
+    grid-area: item3;
+    /* height: auto; */
+  }
+  .item4 {
+    grid-area: item4;
+    /* height: 15rem; */
+  }
+.grid-container {
+    display: grid;
+    background-color: #2196F3;
+    height: 100%;
+    grid: 
+    'item1 item1' 10%
+    'item2 item3' 80%
+    'item4 item4' 10%;
+}
+
+.grid-item {
+    background-color: rgba(255, 255, 255, 0.8);
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    text-align: center;
+  }
+
