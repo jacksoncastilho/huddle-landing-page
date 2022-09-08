@@ -1,3 +1,4 @@
+@import url(https://fonts.google.com/specimen/Open+Sans);
 html {
     font-size: 62%;
     height: 100%;
@@ -6,65 +7,124 @@ html {
 body {
     height: 100%;
     background-color: hsl(257, 40%, 49%);
+    font-family: 'Open Sans' sans-serif;
+    font-size: x-large;
+    font-weight: 600;
 }
 
 .background {
   position: absolute;
-  width: 100%;
+  width: 92%;
   height: 100%;
+  /* display: none; */
 }
 
 [class*="grid-item"] {
-    padding: 0 5vw;
+  position: relative;
 }
 
 .item1 {
-    grid-area: item1;
-  }
+  grid-area: item1;
+  display: flex;
+  justify-content: start;
+  align-items: flex-end;
+  padding: 0 5vw;
+}
 
-  .item2 {
-    grid-area: item2;
-    /* width: 50%; */
-  }
+.item2 {
+  grid-area: item2;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
   
-  .item3 {
-    grid-area: item3;
-    /* width: 50%; */
-  }
-  .item4 {
-    grid-area: item4;
-  }
+  padding: 6vw 0 0 5vw;
+}
+
+.item3 {
+  grid-area: item3;
+  display: flex;
+  flex-direction: column;
+  padding: 9vw 5vw 0 2vw; 
+}
+.item4 {
+  grid-area: item4;
+  padding: 0 5vw;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-end;
+  flex-wrap: nowrap;
+}
 .grid-container {
-    display: grid;
-    /* background-color: #2196F3; */
-    height: 100%;
-    grid: 
-    'item1 item1' 10%
-    'item2 item3' 80%
-    'item4 item4' 10%
-    / 50% 50%;
+  display: grid;
+  height: 100%;
+  grid: 
+  'item1 item1' 13%
+  'item2 item3' 77%
+  'item4 item4' 10%
+  / 57% 43%;
 }
 
 .grid-item {
-    /* background-color: rgba(255, 255, 255, 0.8); */
-    border: 1px solid rgba(0, 0, 0, 0.8);
+    /* border: 1px solid rgba(0, 0, 0, 0.8); */
     text-align: center;
   }
 
+.logo {
+  width: 285px;
+}
+
 .mockups {
-  /* position: absolute; */
-    width: 50%;
+  position: relative;
+  width: 94%;
+
 }
 
-.item4 {
+.descricao {
+  margin-bottom: 30px;
+  text-align: left;
+  color: #ffff;
+  
+}
+
+h1 {
+  font-size: 5rem;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+}
+
+p {
+  font-size: 2rem;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+  letter-spacing: 1px;
+}
+
+.btn {
+  width: 235px;
+  height: 60px;
+  background-color: white;
+  border-radius: 50px;
+  font-size: 2rem;
+  color: hsl(257, 40%, 49%);
   display: flex;
+  justify-content: center;
   align-items: center;
-  justify-content: flex-end;
-  flex-wrap: nowrap;
-
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
+.btn:hover {
+  background-color: hsl(300, 69%, 71%);
+  color: #ffff;
+}
+
+/* footer */
 .social {
-  width: 30px;
-  margin-left: 10px;
+  width: 40px;
+  margin-left: 30px;
 }
+
+/* svg:hover .social {
+  fill: hsl(300, 69%, 71%);
+} */
