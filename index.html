@@ -6,12 +6,17 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="css/reset.css">
   <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/responsive.css">
   <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
   <title>Document</title>
 </head>
 <body>
-  <img src="img/bg-desktop.svg" alt="bg-desktop" class="background"> 
+  <picture >
+    <source srcset="img/bg-mobile.svg" media="(max-width: 700px)">
+    <source srcset="img/bg-desktop.svg">
+    <img src="img/bg-desktop.svg" alt="bg-desktop" class="background">
+  </picture>
   <div class="grid-container">
     <header class="grid-item item1">
       <img src="img/logo.svg" alt="logo" class="logo">
@@ -21,8 +26,8 @@
     </main>
     <section class="grid-item item3">
       <h1 class="descricao">Build The Community <br> your Fans Will Love</h1>
-      <p class="descricao">Huddle re-imagines the way we build communities. You have <br> a voice, but so
-        does your audience. Create connections with <br> your users as you engage in genuine discussion.
+      <p class="descricao">Huddle re-imagines the way we build communities. You have a voice, but so
+        does your audience. Create connections with your users as you engage in genuine discussion.
       </p>
       <a class="btn">Register</a>
     </section>
