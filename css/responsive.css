@@ -9,7 +9,6 @@
         'item4 item4'
       }
 
-
       [class*="grid-item"] {
         align-items: center; 
         justify-content: center;
@@ -17,18 +16,22 @@
         padding-bottom: 50px;
       }
 
-
       .item1 {
         justify-content: flex-start;
         align-items: center;
         padding-top: 35px;
       }
 
+      .item4 {
+        justify-content: space-evenly;
+        margin: 0%;
+        padding: 0 35vw;
+      }
+
       .logo {
         width: 30vw;
       }
       
-
       .background {
         width: 100%;
         height: 50%;
@@ -37,6 +40,7 @@
       .mockups {
         width: 100%;
       }
+
       .descricao {
         text-align: center;
       }
@@ -48,4 +52,18 @@
       p {
         font-size: 3vw;
       }
+
+      .btn {
+        width: 40vw;
+        height: 5vh;
+
+        font-size: 70%;
+      }
+
+      .social {
+        width: 6vw;
+        margin: 0%;
+      }
+
+
     }
